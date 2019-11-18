@@ -1,0 +1,15 @@
+function pm25_3(pm)
+switch fix(pm)
+    case num2cell(0:34)
+        disp('优')
+    case num2cell(35:74)
+        disp('良')
+    case num2cell(75:114)
+        disp('轻度污染')
+    case num2cell(115:149)
+        disp('中度污染')
+    case num2cell(150:249)
+        disp('重度污染')
+    otherwise
+        disp('严重污染')
+end
